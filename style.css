@@ -1,0 +1,82 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 50px;
+    background: #222;
+    color: white;
+}
+nav a {
+    margin-left: 20px;
+    color: white;
+    text-decoration: none;
+}
+.hero {
+    height: 90vh;
+    background: linear-gradient(to right, #4facfe, #00f2fe);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    text-align: center;
+}
+.hero button {
+    padding: 10px 20px;
+    border: none;
+    margin-top: 20px;
+    cursor: pointer;
+}
+section {
+    padding: 60px 50px;
+    text-align: center;
+}
+h2{
+    padding: 20px;
+}
+.skill-box {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+.skill-box div {
+    background: #f4f4f4;
+    padding: 10px 20px;
+    border-radius: 5px;
+}
+.project-name {
+    background: #f9f9f9;
+    margin: 20px auto;
+    padding: 20px;
+    width: 60%;
+    border-radius: 8px;
+}
+#contact input, 
+#contact textarea {
+    width: 60%;
+    padding: 10px;
+    margin: 10px 0;
+}
+#contact button {
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+}
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+    }
+
+    .project-name,
+    #contact input,
+    #contact textarea {
+        width: 90%;
+    }
+}
